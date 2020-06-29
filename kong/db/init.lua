@@ -390,7 +390,6 @@ do
 
 
   function DB:schema_state(stop_namespace, stop_migration)
-    print("in db:schema_state ", stop_namespace, stop_migration)
     local err
     last_schema_state, err = MigrationsState.load(
       self, stop_namespace, stop_migration)
